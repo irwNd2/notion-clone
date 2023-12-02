@@ -4,16 +4,14 @@ interface TitleSectionProps {
   pill: string;
 }
 
-const TitleSection: React.FC<TitleSectionProps> = ({
-  title,
-  subheading,
-  pill,
-}) => {
+const TitleSection: React.FC<
+  TitleSectionProps
+> = ({ title, subheading, pill }) => {
   return (
     <>
       <section className="flex flex-col justify-center items-start gap-4 md:items-center">
         <article className="rounded-full p-[1px] text-sm dark:bg-gradient-to-r dark:from-cyan-900 dark:to-green-900">
-          <div className="rounded-full border px-3 py-1 dark:bg-black">
+          <div className="rounded-full border border-brand-primaryPurple px-3 py-1 dark:bg-black">
             {pill}
           </div>
         </article>
